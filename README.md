@@ -2,7 +2,8 @@
 The repository contains datasets associated with our recent study entitled ['CCR4-NOT differentially controls host vs. virus poly(A)-tail length and regulates HCMV infection'](https://www.embopress.org/doi/full/10.15252/embr.202256327) (PMID: 37846490).
 
 
-### Bedgraph files were generated using trimgalore v0.5, bbmap v38.25, samtools v1.9, and bedtools v2.27.1
+### Bedgraph files
+These were generated using trimgalore v0.5, bbmap v38.25, samtools v1.9, and bedtools v2.27.1
 ```
 ### Trim adaptors and quality
 trim_galore --paired --quality 30 --length 30 -o /trimmed infile_R1.fastq.gz infile_R2.fastq.gz
@@ -28,7 +29,8 @@ samtools view -b hcmv.aligned.sampled.sorted.bam | genomeCoverageBed -ibam stdin
 ```
 
 
-### Poly(A) tail length estimates were generated using nanopolish v0.13.3 from transcriptome level alignments against the HCMV strain TB40E-cloneBAC4  transcriptome and a human database of mRNAs and lncRNAs derived from [Gencode v37](https://www.gencodegenes.org/human/release_37.html)
+### Poly(A) tail length estimates 
+These were generated using nanopolish v0.13.3 from transcriptome level alignments against the HCMV strain TB40E-cloneBAC4  transcriptome and a human database of mRNAs and lncRNAs derived from [Gencode v37](https://www.gencodegenes.org/human/release_37.html)
 ```
 nanopolish polya --threads=8 --reads=in.fastq --bam=hcmv.sorted.bam --genome=TB40E-cloneBAC4.fasta > hcmv.polyA.tsv
 nanopolish polya --threads=8 --reads=in.fastq --bam=human.sorted.bam --genome=gencode.v37.pc.lncRNA_transcripts.fa > human.polyA.tsv
