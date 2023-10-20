@@ -1,5 +1,11 @@
 # CCR4-NOT-regulates-HCMV
-The repository contains datasets associated with our recent study entitled ['CCR4-NOT differentially controls host vs. virus poly(A)-tail length and regulates HCMV infection'](https://www.embopress.org/doi/full/10.15252/embr.202256327) (PMID: 37846490).
+
+<img class="img-fluid" src="synopsis.jpg" alt="visual abstract">
+
+
+The repository contains datasets associated with our recent study (PMID: 37846490) entitled 
+
+['CCR4-NOT differentially controls host vs. virus poly(A)-tail length and regulates HCMV infection'](https://www.embopress.org/doi/full/10.15252/embr.202256327)
 
 
 ### Bedgraph files
